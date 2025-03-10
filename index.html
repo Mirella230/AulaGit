@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Entrar</title>
+</head>
+<body>
+    <div id="Login">
+
+        <div class="caixa">
+            <h1>CONECTE-SE</h1>
+
+            <div class="email">
+                <input type="email" placeholder="E-mail">
+            </div>
+
+            <div class="senha">
+                <input type="password" placeholder="Senha">
+            </div>
+
+            <div class="entrar">
+                <p>Ainda não tem uma conta? <a href="cadastro.html">Crie uma.</a></p>
+                <input type="submit" value="Entrar" onclick="Entrar()">
+            </div>
+
+        </div>
+
+        <script>
+
+            function Entrar(){
+    
+                var login=document.getElementById('login').value;
+                var senha=document.getElementById('senha').value;
+    
+                if(login == "admin" && senha == "admin"){
+                    alert('acesso concluído');
+                }else{
+                    alert('usuário ou senha incorreta');
+                }
+            }
+          </script>
+    </div>
+</body>
+</html>
