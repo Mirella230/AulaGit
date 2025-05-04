@@ -15,7 +15,8 @@ header, footer {
     background: #0c0000;
     color: rgb(153, 153, 153);
     padding: 20px;
-   text-align: center;
+    text-align: center;
+    font-size: 24px;
   }
 
 a{
@@ -114,7 +115,8 @@ h1{
     padding: 20px;
     gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-
+    justify-content: center;
+    align-items: center;
   }
 
   .photo {
@@ -160,7 +162,63 @@ h1{
     text-align: center;
     background-color: #474747;
     padding: 1%;
+    background: #222;
+    color: white
   }
+
+    header {
+    background: #000000;
+    color: rgb(194, 191, 191);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.box {
+  background: rgb(8, 8, 8);
+  padding: 20px;
+  width: 20%;            
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* 📱 Mobile (até 600px) */
+        @media (max-width: 600px) {
+          header {
+              font-size: 18px;
+              padding: 15px;
+          }
+
+          .container {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          .box {
+              width: 90%;
+          }
+      }
+
+      /* 📲 Tablets (601px a 1024px) */
+      @media (max-width: 1024px) and (min-width: 601px) {
+          .container {
+              flex-wrap: wrap;
+          }
+
+          .box {
+              width: 45%;
+          }
+      }
+
 
    /* Responsividade para telas pequenas */
    @media (max-width: 768px) {
@@ -171,9 +229,3 @@ h1{
   }
 
     
- @media (max-width: 600px) {
-            header {
-                font-size: 18px;
-                padding: 15px;
-            }
-     
