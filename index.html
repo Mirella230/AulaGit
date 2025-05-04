@@ -7,6 +7,11 @@
     <title>Entrar</title>
 </head>
 <body>
+    
+ <header>
+    <h1>Bem-vindo</h1>
+  </header>  
+    
     <div id="Login">
 
         <div class="caixa">
@@ -27,29 +32,31 @@
 
         </div>
 
-         <div class="banner">
-             <img src="./assets/cachoeira-natureza-paisagem-primavera-verde-1991621.jpg"
-             srcset="./assets/cachoeira-natureza-paisagem-primavera-verde-1991621 480w, ./assets/cachoeira-natureza-paisagem-primavera-verde-1991621 1024w"
-             sizes="(max-width: 600px) 480px, (max-width: 1200px) 1024px,1600px"
-             alt="Imagem responsiva"
-             >
-         </div>
-
-
-        <script>
-
-            function Entrar(){
-    
-                var login=document.getElementById('login').value;
-                var senha=document.getElementById('senha').value;
-    
-                if(login == "admin" && senha == "admin"){
-                    alert('acesso concluído');
-                }else{
-                    alert('usuário ou senha incorreta');
-                }
-            }
-          </script>
     </div>
+
+    <main>
+    <div class="sidebar">
+      <p>Links ou informações extras aqui.</p>
+    </div>
+   </main>
+
+   <main>
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?crop=entropy&cs=tinysrgb&fit=crop&h=300&w=400" alt="Foto 2">
+      </div>
+      <div class="photo">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&h=300&w=400" alt="Foto 4">
+      </div>
+  </main>
+
+  <nav>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>
