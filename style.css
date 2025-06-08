@@ -13,10 +13,10 @@ html, body{
 
 header, footer {
     background: #0c0000;
-    color: rgb(153, 153, 153);
+    color: rgb(155, 154, 154);
     padding: 20px;
-    text-align: center;
-    font-size: 24px;
+   text-align: center;
+   font-size: 24px;
   }
 
 a{
@@ -30,6 +30,79 @@ a{
     align-items: center;
     display: flex;
     flex: row;
+}
+
+.telefone input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+}
+
+.cpf input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+}
+
+.endereco input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+}
+
+.cidade input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+}
+
+.estado input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+
+}
+
+select{
+  border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    background-color: #1e1c2e;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+}
+
+select:focus{
+  outline: none;
+  border-color: #c267d4;
+  box-shadow: 0 0 3px #b6b6b6;
 }
 
 .name input{
@@ -51,6 +124,7 @@ a{
     padding-left: 15px;
     background-color: #1e1c2e;
     color: #b6b6b6;
+   margin-top: 15px;
 }
 
 .senha input{
@@ -70,22 +144,43 @@ a{
     height: 40px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(203, 248, 248);
-    color: #141414;
+    background-color: rgb(185, 206, 253);
+    color: #141414; 
+    box-shadow: 0 0 10px #f7dcdc; 
 }
+
+.entrar input:hover{
+  background-color: #67d4c6;
+}
+
+button{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(185, 206, 253);
+    color: #141414; 
+    box-shadow: 0 0 10px #f7dcdc; 
+}
+button:hover{
+  background-color: #67d4c6;
+}
+
 
 input::placeholder{
     color: #b6b6b6;
 }
 
 h1{
-    color: #fafafa;
+    color: #fdfbfb;
 }
 
 .caixa{
     margin-top: 145px;
+}
 
-    * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -163,10 +258,10 @@ h1{
     background-color: #474747;
     padding: 1%;
     background: #222;
-    color: white
-  }
+    color: white;
+ }
 
-    header {
+  header {
     background: #000000;
     color: rgb(194, 191, 191);
     padding: 20px;
@@ -191,12 +286,40 @@ h1{
   text-align: center;
 }
 
+.caixa img {
+  background-image: url('./assets/logo.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 180px;
+  height: 90px;
+}
+
 .destaque {
   color: blue;
   font-weight: bold;
   }
+ 
 
-/* 📱 Mobile (até 600px) */
+@media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+.caixa img{
+  background-image: url('./assets/cce479ef9ee69a50589842b0927a213a.webp');
+  height: 50vh;
+}
+  
+}
+
+        /* 📱 Mobile (até 600px) */
         @media (max-width: 600px) {
           header {
               font-size: 18px;
@@ -224,7 +347,6 @@ h1{
           }
       }
 
-
    /* Responsividade para telas pequenas */
    @media (max-width: 768px) {
     main {
@@ -232,5 +354,3 @@ h1{
       grid-template-rows: auto;
     }
   }
-
-    
