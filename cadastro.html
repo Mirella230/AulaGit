@@ -10,58 +10,83 @@
 
   <header>
     <h1>Bem-vindo</h1>
-  </header>
-    
+  </header>  
+
     <div id="Login">
 
         <div class="caixa">
             <h1>CADASTRO</h1>
 
-            <div class="name">
-                <input type="text" placeholder="Nome">
+            <form action="https://webhook.site/seulinkaqui" method="POST"></form>
+
+            <div  class="name">
+            <input type="text" placeholder="Nome" class="inputs required">
             </div>
 
-            <div class="email">
-                <input type="email" placeholder="E-mail">
+            <div  class="email">
+                <input type="email" placeholder="E-mail" class="inputs required">
             </div>
 
+             <br>
+             <div class="telefone">
+              <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" class="inputs required">
+            </div>
+              
+             <br>
+           <div class="cpf">
+              <input type="text" id="cpf" name="cpf" maxlength="14" placeholder="CPF" class="inputs required">
+           </div>
+
+             <br>
+            <div class="endereco">
+             <input type="text" id="endereco" name="endereco" placeholder="Endereço" class="inputs required">
+            </div>
+
+             <br>
+            <div class="cidade">
+             <input type="text" id="cidade" name="cidade" placeholder="Cidade" class="inputs required">
+            </div>
+
+             <br>
+           <div class="estado">
+            <select id="estado" name="estado"  class="inputs required">
+              <option value="">Selecione o estado</option>
+              <option value="SP">São Paulo</option>
+             <option value="RJ">Rio de Janeiro</option>
+             <option value="MG">Minas Gerais</option>
+             <option value="RS">Rio Grande do Sul</option>       
+           </select>
+           </div>  
+
+        
+           <div class="senha">
+                <input type="password" placeholder="Senha" class="inputs required">
+            </div>
+
+             <br>
             <div class="senha">
-                <input type="password" placeholder="Senha">
+               <input type="password" placeholder="Confirme a sua senha" class="inputs required">
             </div>
 
-            <div class="senha">
-               <input type="password" placeholder="Confirme a sua senha">
-            </div>
-
+               <br>
             <div class="entrar">
-                <p>Já tem uma conta? <a href="index.html">Entre aqui.</a></p>
-                <input type="submit" value="Entrar">
+               <input type="button" value="Entrar" >
+               
+               <p><br>Já tem uma conta? <a href="index.html">Entre aqui.</a></p>
+              
             </div>
 
-        </div>
+      </div>
 
     </div>
 
    <main>
     <div class="sidebar">
       <p>Links ou informações extras aqui.</p>
-    </div>
-   </main>
-
-   <main>
-      <div class="photo">
-        <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?crop=entropy&cs=tinysrgb&fit=crop&h=300&w=400" alt="Foto 2">
-      </div>
-      <div class="photo">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=crop&h=300&w=400" alt="Foto 4">
-      </div>
-  </main>
-
-  <nav>
-    <a href="#">Serviços</a>
+      <a href="#">Serviços</a>
     <a href="#">Contato</a>
-  </nav>
-
+    </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 - Todos os direitos reservados</p>
