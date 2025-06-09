@@ -9,6 +9,9 @@
 <body>
   <body>
 
+    <h1 id="titulo">Título Original</h1>
+    <button onclick="alterarTexto()">Clique Aqui</button>
+
     <main>
       <div class="photo">
         <img src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?crop=entropy&cs=tinysrgb&fit=crop&h=300&w=400" alt="Foto 2">
@@ -24,8 +27,22 @@
     </div>
 </main>
 
-  <h1 id="titulo">Título Original</h1>
-    <button onclick="alterarTexto()">Clique Aqui</button>
+
+     <h2 style="text-align: center;">Clientes</h2>
+
+  <button id="listar-btn">Listar Clientes</button>
+
+  <table id="tabela-clientes">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Endereço</th>
+        <th>Data de Nascimento</th>
+        <th>CPF</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
 </body>
 </html>
